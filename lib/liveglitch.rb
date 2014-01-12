@@ -6,10 +6,7 @@ $:.unshift(File.dirname(__FILE__) + '/../lib')
 
 require 'liveglitch/proxy'
 require 'liveglitch/utils'
+require 'liveglitch/databender'
 module LiveGlitch
 
-end
-
-autoreload(:interval=>2, :verbose=>true) do
-    require 'liveglitch/databender.rb' 
 end

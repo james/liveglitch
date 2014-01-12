@@ -11,13 +11,13 @@ when "serve"
 when "play"
   LiveGlitch::Utils.play_stream
 when "proxy"
-  LiveGlitch::HTTPProxy.run
+  LiveGlitch::HTTPProxy.run(ARGV[1])
 else
   STDOUT.puts <<-EOF
 Please provide command name
 
 Usage:
-  liveglitch proxy
+  liveglitch proxy databender_path
   liveglitch serve file_path
   liveglitch play
 EOF

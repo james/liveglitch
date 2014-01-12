@@ -2,7 +2,11 @@ module LiveGlitch
   class HTTPProxy
     ServerPort = 9999
     ProxyPort = 8008
-    def self.run
+    def self.run(databender_path='')
+      p "loading #{databender_path}"
+      autoreload(:interval=>2, :verbose=>true) do
+        require databender_path
+      end
       p "Starting Proxy server"
       EventMachine.run do
         Proxy.start(:host => "localhost", :port => ProxyPort, :debug => false) do |conn|
