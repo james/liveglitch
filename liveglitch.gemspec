@@ -10,7 +10,6 @@ Gem::Specification.new do |s|
   s.homepage = "https://github.com/james/liveglitch"
   s.executables << 'liveglitch'
   s.has_rdoc = false
-  s.required_ruby_version = Gem::Requirement.new("> 2.0")
   s.test_files = []
 
   s.add_dependency("em-proxy")
