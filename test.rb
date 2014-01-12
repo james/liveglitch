@@ -1,8 +1,8 @@
-VLC = "/Applications/VLC.app/Contents/MacOS/VLC"
+# VLC = "/Applications/VLC.app/Contents/MacOS/VLC"
 
-require './proxy.rb'
+require './lib/liveglitch.rb'
 # proxy = fork do
-  LiveGlitch::HTTPProxy.run
+LiveGlitch::HTTPProxy.run
 # end
 # vlc_server = fork do
 #   `#{VLC} rudimental.avi --sout "#standard{mux=ts,access=http,dst=localhost:9999/test}"`
