@@ -4,6 +4,13 @@
 
 This Library provides a few tools to make glitching (aka databending) of http streams easy. There are three parts:
 
+### Install
+
+To install this gem straight away, run:
+
+`gem install specific_install`
+`gem specific_install james/liveglitch`
+
 ### Creating a HTTP stream
 
 Before you can glitch, you need something to glitch. `liveglitch serve` will use VLC to stream a file you specify over HTTP.
