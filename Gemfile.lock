@@ -1,10 +1,18 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    streamio-ffmpeg (1.0.0)
+    byebug (2.5.0)
+      columnize (~> 0.3.6)
+      debugger-linecache (~> 1.2.0)
+    columnize (0.3.6)
+    debugger-linecache (1.2.0)
+    em-proxy (0.1.8)
+      eventmachine
+    eventmachine (1.0.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  streamio-ffmpeg
+  byebug
+  em-proxy
