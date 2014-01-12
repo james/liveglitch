@@ -4,7 +4,7 @@ module LiveGlitch
     ProxyPort = 8008
     def self.run(databender_path='')
       p "loading #{databender_path}"
-      autoreload(:interval=>2, :verbose=>true) do
+      autoreload(:interval=>0.3, :verbose=>true) do
         require databender_path
       end
       p "Starting Proxy server"
