@@ -5,6 +5,7 @@ require 'byebug'
 $:.unshift(File.dirname(__FILE__) + '/../lib')
 
 require 'liveglitch/proxy'
+require 'liveglitch/utils'
 module LiveGlitch
 
 end

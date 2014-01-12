@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+
+lib = File.expand_path(File.dirname(__FILE__) + '/../lib')
+$LOAD_PATH.unshift(lib) if File.directory?(lib) && !$LOAD_PATH.include?(lib)
+
+require 'liveglitch'
+
+case ARGV[0]
+when "serve"
+  LiveGlitch::Utils.serve_file(ARGV[1])
+when "play"
+  LiveGlitch::Utils.play_stream
+when "proxy"
+  LiveGlitch::HTTPProxy.run
+else
+  STDOUT.puts <<-EOF
+Please provide command name
+
+Usage:
+  liveglitch proxy
+  liveglitch serve file_path
+  liveglitch play
+EOF
+end
