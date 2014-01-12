@@ -22,6 +22,8 @@ You will need a ruby file which provides the LiveGlitch::DataBender.bend method.
 
 This method gets called for every packet of http data sent through the proxy server.
 
+*This file will be autoreloaded when you save it, meaning you can edit it without inturupting the stream!*
+
 Example:
 
 `liveglitch proxy path/to/my/databender.rb`
