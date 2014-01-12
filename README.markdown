@@ -42,4 +42,4 @@ This is very very early hacking. It currently has only been tested on my compute
 
 * Assumes you are using OS X and have VLC installed at /Applications/VLC.app
 * I haven't tested out using the proxy with any other streams other than that created by the `liveglitch serve` command, but would very much like to.
-* Some examples of what this can do would be nice. I still need to play with it and learn a bit more about HTTP video streaming. It may not do anything particularly interesting really. This may be a waste of time. Oh well.
+* Some examples of what this can do would be nice. I still need to play with it and learn a bit more about HTTP video streaming. It may not do anything particularly interesting really. It may be that HTTP streams aren't that interesting to glitch. Any suggestions very welcome. Also, This may be a waste of time. Oh well.
