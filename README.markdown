@@ -8,8 +8,8 @@ This Library provides a few tools to make glitching (aka databending) of http st
 
 To install this gem straight away, run:
 
-`gem install specific_install`
-`gem specific_install james/liveglitch`
+    gem install specific_install
+    gem specific_install james/liveglitch
 
 ### Creating a HTTP stream
 
@@ -17,7 +17,7 @@ Before you can glitch, you need something to glitch. `liveglitch serve` will use
 
 Example:
 
-`liveglitch server my_movie.avi`
+    liveglitch serve my_movie.avi
 
 Will start a looping stream of my_movie.avi over port 9999 of your computer.
 
@@ -33,7 +33,7 @@ This method gets called for every packet of http data sent through the proxy ser
 
 Example:
 
-`liveglitch proxy path/to/my/databender.rb`
+    liveglitch proxy path/to/my/databender.rb
 
 Will start the proxy on port 8008
 
@@ -41,7 +41,7 @@ Will start the proxy on port 8008
 
 You can try any player out if it can connect to our proxy, but for convenience, there is this command, which will open the VLC with correct settings for you:
 
-`liveglitch play`
+    liveglitch play
 
 ## Problems and TODOs
 
