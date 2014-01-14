@@ -2,7 +2,11 @@
 
 ## A proxy server in ruby for live glitching http media streams
 
-This Library provides a few tools to make glitching (aka databending) of http streams easy. There are three parts:
+This Library provides a few tools to make glitching (aka databending) of http streams easy.
+
+Video demo here: https://www.youtube.com/watch?v=GnBC9PbZE8o
+
+There are three parts:
 
 ### Install
 
